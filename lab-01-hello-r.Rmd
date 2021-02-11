@@ -16,5 +16,7 @@ library(datasauRus)
 
 
 ### Lab Exercise
+(head(datasaurus_dozen)
+summary(datasaurus_dozen)
+view(datasaurus_dozen))
 
-answer for Task3
