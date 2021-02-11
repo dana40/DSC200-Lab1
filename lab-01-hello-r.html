@@ -203,7 +203,7 @@ library(datasauRus)</code></pre>
 </div>
 <div id="lab-exercise" class="section level3">
 <h3>Lab Exercise</h3>
-<p>( datasaurus_dozen %&gt;%count(dataset) %&gt;%print(13) dion_data &lt;-datasaurus_dozen %&gt;%filter(dataset==“dino”) ggplot(data=dino_data, mapping=()aes(x=y,y=y))+geom_point dino_data %&gt;% + summarize(r = cor(x, y)))</p>
+<p>( star_data &lt;-datasaurus_dozen %&gt;%filter(dataset == “star”) ggplot(data = star_data, mapping = aes(x = x, y = y)) + + geom_point()+ facet_wrap(~ dataset, ncol = 3) + + theme(legend.position = “none”) star_data %&gt;% + summarize(r = cor(x, y)))</p>
 </div>
 
 

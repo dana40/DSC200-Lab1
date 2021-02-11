@@ -16,9 +16,9 @@ library(datasauRus)
 
 
 ### Lab Exercise
-( datasaurus_dozen %>%count(dataset) %>%print(13)
-dion_data <-datasaurus_dozen %>%filter(dataset=="dino")
-ggplot(data=dino_data, mapping=()aes(x=y,y=y))+geom_point
-dino_data %>%
+( star_data <-datasaurus_dozen %>%filter(dataset == "star")
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
++     geom_point()+     facet_wrap(~ dataset, ncol = 3) +
++     theme(legend.position = "none")
+star_data %>%
 +     summarize(r = cor(x, y)))
-
